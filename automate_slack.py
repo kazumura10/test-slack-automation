@@ -8,11 +8,11 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 dotenv.load_dotenv()
 TOKEN = os.environ.get("BOT_TOKEN")
 APP_TOKEN = os.environ.get("APP_TOKEN")
+CHANNEL_ID = os.environ.get("CHANNEL_ID")
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # 以下の情報はSlackのチャンネル情報を取得するための情報，一回のみ取得すればよい
 CHANNEL = 'bot-test'
-CHANNEL_ID = 'C06VC3TEQG7'
 
 # timestampは試験的に固定値を入れている，UNIX時間(小数点以下は6桁)
 TS = "1713944329.798709"
